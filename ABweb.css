@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto+Condensed|Roboto+Slab&display=swap');
+
+/*the same styling that was done of the landing page but styled the box as border box and also remove
+text decorations and outlines*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    min-height: 100%;
+}
+
+/*the same explanations as we have in the AB.css, all stylings for the navigation bar are the same, the 
+only difference is the inclusion of border and background color for the navigation bar */
+.row {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+    height: 10px;
+    width: 5px;
+    margin-top: 10px;
+}
+
+header {
+    border: 1px solid #001999; /* the border included*/
+    height: 70px;
+    background-color: #001999; /*the styling of the background of the navigation bar color*/
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    padding-right: 10px;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.main-nav li.active a {
+    border: 1px solid #ffffff;
+}
+
+.main-nav li a:hover {
+    border: 1px solid #ffffff;
+}
+/*End of Navigation Bar*/
+
+
+/*Styling of the icons*/
+.icon-section{
+    left: 100%;
+    margin-left: 5%;
+}
+
+.icons {
+    float: right; /*Move them to the right side of the page*/
+    margin-top: 10px;
+}
+
+.icons li {
+    text-decoration: none; /*Remove text decorations that comes with links*/
+    display: inline-block; /*make them sit side by side*/
+    padding: 20px;
+}
+
+.icons li a {
+    color: black; /*give the icons a color black*/
+}
+
+/*specifically position the user icon*/
+#user {
+    padding-left: 700px;
+} 
+
+#user1 {
+    padding-right: 75px;
+}
+/*End of styling icons*/
+
+/*Categories: the section where we have the categories of wine*/
+.categories  {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    width: 1349px;
+    height: 40px;
+    padding-top: 7px;
+    border: 2px solid #001999;
+    background-color: #001999
+}
+
+.categories a {
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+}
+
+/*Login Section just above the categories section*/
+.login-container {
+    float: right;
+    padding-right: 10px;
+    margin-left: 100px;
+}
+
+.login input[type=text], input[type=password] { /*used to particularly style the input box for the username and pword*/
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 13px;
+    font-family: 'Roboto Slab', serif;
+    border: 1px solid #ccc;;
+    width: 150px;
+    height: 30px;
+}
+
+/*styling the button for the login section*/
+.submitbtn1 {
+    background-color: #db0707;
+    color: white;
+    padding: 0px 12px;
+    margin: 3px 0;
+    margin-left: 15px;
+    height: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 11px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+/*used to create an effect on the button*/
+button:hover {
+    opacity: 0.8;
+}
+
+
+/**SearchBar**/
+
+.wrap { /*the parent div class for the search section*/
+    top: 20%;
+    position: fixed;
+    
+}
+  
+.search {
+    width: 100%;
+    display: flex;
+    width: 50%;
+    padding-right: 500px;
+    padding-bottom: 450px;
+}
+
+.inputWithIcon i {
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    padding: 9px 8px;
+    color: #000000;
+    transition: 3s; /*the effect on the serach icon*/
+}
+
+.inputWithIcon input[type=text]:focus + i { /*actualizing the transition effect on the icon by making it transit from black to gold*/
+    color: #ffec8b;
+}
+
+.searchTerm {
+    width: 325px;
+    border: 3px solid #ffec8b;
+    border-right: none;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px 0 0 5px; /*make the edges of the serach button curve*/
+    outline: none;
+    padding-left: 30px;
+    color: #9DBFAF;
+}
+  
+.searchTerm:focus{
+    color: #000000;
+}
+  
+.searchButton {
+    width: 220px;
+    height: 40px;
+    border: 1px solid #ffec8b;
+    background: #ffec8b;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+  
+.wrap{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* End of search bar*/
+
+
+/**Top Seller Section: this is the styling for the boxes that displayed the products**/
+
+.topic { /*the heading for each categories */
+    font-size: 15px;
+    text-align: left;
+    padding-left: 105px;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 120px;
+}
+
+.topic2 { /*used to specifically styled some headings of the categories*/
+    font-size: 15px;
+    text-align: left;
+    padding-left: 105px;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 30px;
+}
+
+.columns { /*styling the layout of the boxes and positioning it*/
+    margin-top: 10px;
+    margin-left: 95px;
+    display: flex; /*Setting the boxes to flex so they have sit on a straight line*/
+    flex-wrap: wrap;
+}
+
+.img { /*Size adjusting the images and fitting them into the boxes*/
+    height: 120px;
+    width: 150px;
+    top: 60%;
+    margin-right: 6px;
+}
+
+.price { /*styling for each boxes*/
+    border: 2px solid hsl(0, 0%, 93%);
+    list-style-type: none;
+    margin-left: 6px;
+    padding: 25px;
+    padding-left: 25px;
+    transition: 0.25s;
+    text-align: center;
+}
+
+.price:hover { /*hover effect on the boxes */
+    box-shadow: 0 8px 12px 0 rgb(0, 0, 0, 0.2);
+    transform: scale(1.025);
+}
+
+.price .p-text { /*Styling for all the texts on the boxes*/
+    color: red;
+    font-weight: bolder;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    margin-top: 70px;
+}
+
+#image { /*trying to position the first flexbox*/
+    margin-left: 30px;
+}
+
+.price li { /*since the boxes are in a list item, then we style the list items*/
+    background-color: #ffffff;
+    padding: 5px;
+    text-align: center;
+}
+
+button { /*styling the "add to cart" button*/
+    background-color: #ffec8b;
+    border: none;
+    border-radius: .15em;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 12px 24px;
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+.see-more { /*styling the see more link*/
+    border: 0px solid #ffec8b;
+    width: 130px;
+    height: 40px;
+    background-color: #ffffcc;
+    margin-left: 1075px;
+    margin-top: 20px;
+    padding-top: 7px;
+    box-shadow: 1px 1px 2px #000000;
+}
+
+.see-more a { /*since its a link, it has to be specifically styled*/
+    text-decoration: none;
+    font-size: 18px;
+    color: crimson;
+    font-style: italic;
+    font-family: 'Roboto Slab', serif;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+/*End of flex box styling*/
+
+
+/*Floating chat icon: the styling for the fixed customer service chat icon by the bottom of the page */
+.floating-chat {
+    cursor: pointer;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #001999;
+    position: fixed; /*it is set to fixed so it doesn't move as the page is being scrolled */
+    bottom: 130px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    transform: translateY(70px); /*create an effect on the chat icon*/
+    transition: all 250ms ease-out;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); 
+    opacity: 1;
+}
+
+
+/*Tracking Section: the designing of the product tracking*/
+
+.tracking {
+    float: right;
+    border: 0px solid hsl(0, 0%, 93%);
+    background-color: #ffec8b;
+    margin-left: 80px;
+    width: 450px;
+    box-shadow: 1px 2px 3px #000000;
+}
+
+.track-head {
+    border: 0px solid black;
+    background-image: url(images/worldbg1.jpg);/*map image put behind the name of the logistics company*/
+    width: 400px;
+    height: 80px;
+    margin-left: 20px;
+    box-shadow: 1px 2px 3px #ffffcc;
+}
+
+.track-head h3 { /*the heading of the tracking box*/
+    padding-left: 43px;
+    padding-top: 5px;
+    margin-top: 0px;
+    color: rgb(141, 0, 0);
+    font-style: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+#country { /*to style the dropdown menu*/
+    height: 30px;
+    width: 300px;
+    margin-left: 40px;
+    margin-bottom: 2px;
+    padding-left: 5px;
+}
+
+#go { /*to style the button*/
+    background-color: #db0707;
+    border: none;
+    border-radius: .12em;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+    cursor: pointer;
+    height: 30px;
+    width: 20px;
+    padding-top: 3px;
+    padding-left: 8px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.tbody { /*styling the body of the tracking section*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-left: 22px;
+}
+
+.tbody a { /*since we have links in the tracking section, it is appropriate to paricularly style the link*/
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*Styling the express and logistics button in the tracking section*/
+.btn {
+    border: 1px solid #ffffff;
+    padding: 8px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.btn-one {
+    background-color: #d91e18;
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn-two {
+    color: #000000;
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn-two:hover { /*adding efects to the buttons*/
+    background-color: #d91e18;
+    transition: all 0.5s ease-in;
+}
+
+.main-form {
+    border: 2px solid #ffffff;
+    width: 400px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+#shipment {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+label {
+    font-size: 13px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+}
+
+.textarea {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#txtarea { /*adjusting the text area where the tracking numbers will be inputed*/
+    height: 60px;
+    padding-left: 10px;
+}
+
+#go1 { /*used to style the second >> button*/
+    position: relative;
+    background-color: #db0707;
+    border: none;
+    border-radius: .12em;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+    cursor: pointer;
+    height: 30px;
+    width: 20px;
+    padding-top: 3px;
+    padding-left: 8px;
+    font-size: 15px;
+}
+
+.button1 {
+    margin-top: 5px;
+}
+
+.item-track {
+    margin-left: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+.more-t {
+    margin-left: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+/*End of tracking section styling*/
+
+/*Newsletter Section*/
+.newsletter { /*the parent div container of the newsletter and it was floated right of the product tracking div*/
+    float: right;
+    border: 0px solid hsl(0, 0%, 93%);
+    background-color: #ffec8b;
+    margin-left: 80px;
+    width: 450px;
+    box-shadow: 1px 2px 3px #000000;
+}
+
+.input-container {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.news-head { /*positioning the heading*/
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.news-head h1 { /*adjusting the font style and size of the header*/
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.news-head p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+}
+
+.input-container input[type=text], input[type=submit] { /*styling the input box of the newsletter section*/
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+#sub-btn {
+    margin-top: 25px;
+    margin-left: 30px;
+}
+/*End of newsletter styling*/
+
+
+/**Footer**/
+.footer { /*parent footer div, giving it a background and making its display flex such that all sections in the footer can sit side by side. */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 30px 20px 30px;
+    background-color: #000340;
+    width: 1349px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer p { /*styling all paragraphs*/
+    font-family: 'Roboto Slab', serif;
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 22px;
+}
+
+#ft-r {
+    font-size: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer ul {
+    list-style: none; /*removing list style for the unordered lists in the footer*/
+    padding-left: 0;
+}
+  
+.footer li {
+    line-height: 2em;
+}
+  
+.footer a { /*styling the links*/
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer p { /*re-emphasizing the styling of the paragraphs*/
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer h2 { /*styling the h2 elements*/
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.navfooter {
+    margin-top: 37px;
+    margin-left: 100px;
+}
+
+.link-items {
+    padding-top: 0px;
+    margin-left: 80px;
+}
+
+.navlist p {
+    text-align: left;
+}
+
+.footer-addy {
+    margin-top: 32px;
+    margin-right: 1.25em;
+}
+
+#purpose {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.nav-title {
+    margin-top: 1.3em;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.payment { /*floating the payment div right and adjusting it so as to sit beside everyother footer contents*/
+    float: right;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.btn1 {
+    border: 1px solid #ffffff;
+    padding: 8px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 0px;
+    margin-top: 35px;
+    font-size: 12px;
+}
+
+.btn-one1 {
+    background-color: #d91e18;
+    font-family: 'Roboto Slab', serif;
+}
+
+.fab { /*styling the social media icons and also adding effects*/
+    padding-left: 20px;
+    transition: all 0.25s;
+}
+
+.fab a:hover {
+    text-shadow: #000000;
+    transform: scale(1.025);
+    -webkit-transform: scale(1.1);
+}
+
+/*creating extra footer where we have the drink responsibly texts and also giving a different but similar background to the main footer*/
+.extra-footer {
+    border: 1px solid #000000;
+    background-color: #001999;
+    text-align: center;
+    width: 1349px;
+}
+
+.extra-footer p {
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 2px;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+}
+
+.extra-footer a {
+    color: #ffffff;
+}
+
+
+/*adding media queries*/
+@media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+
