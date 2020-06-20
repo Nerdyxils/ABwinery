@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto+Condensed|Roboto+Slab&display=swap');
+
+/* it is a norm to most developer to set the styling of 
+their webpages to 0 pixels margin and padding some 
+include text decoration: none but most times it is whatever works for you. 
+also setting the min-height to 100% helps so that you do not have unwanted or unnecessary overflow 
+after styling the webpage */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* the row class is for the navigation bar, since there is no border we then 
+set the max-width and width to 1200px and 100% respectively */
+.row {
+    max-width: 1200px;
+    width: auto;
+    margin: auto;
+}
+
+/*the styling for the logo image*/
+
+.logo {
+    float: left;
+    height: 10px;
+    width: 5px;
+    margin-top: 10px;
+}
+
+header {
+    border: 1px solid #D4AF37;
+    height: 70px;
+    background-color: #D4AF37;
+}
+
+.main-nav {
+    float: right;
+    display: inline-flex; /*make the list sit side by side */
+    list-style: none; /* to remove the styling of unordered list which carries each of the menu*/
+    margin-top: 30px;
+}
+
+/* used to style the menu options in the nav-bar such as color, font family e.t.c*/
+.main-nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.main-nav li.active a {
+    border: 1px solid #ffffff;
+}
+
+/*For the effect on the menus/options*/
+.main-nav li a:hover {
+    border: 1px solid #ffffff;
+}
+
+/* the styling for the image that is the body of the landing page*/
+.right {
+    float: right;
+    margin-top: 69px;
+    margin-right: 22px;
+    display: block;
+    width: 46.5%;
+    opacity: 0.7;
+}
+
+/* the styling for the sticky note or warning note that is the the box beside the image on the landing page*/
+.text-block {
+    position: fixed; /* the position was set to fixed so it wouldn't move as the page is being scrolled either ways*/
+    top: 135px;
+    left: 40px;
+    background-color: rgb(212,175,55,0.8);
+    color: white;
+    padding: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 420px;
+    margin: 0 auto 100%;
+    text-align: center;
+    font-style: italic;
+    color: red;
+    font-size: 15px;
+}
+
+/*styling for the input box*/
+.text-block input {
+    align-self: center;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin: 20px 0 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+/*Styling for the button*/
+
+.e-button button {
+    margin-top: 30px; /*for proper positioning of the button*/
+}
+
+/*styling the button such as colors e.t.c */
+.e-button .btn {
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.e-button a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn-enter:hover {
+    background-color: #D4AF37;
+    transition: all 0.5s ease-in;
+}
+
+/*Styling for the footer, the terms and conditions section*/
+
+.footer-terms {
+    position: absolute; /* makes the footer move when the page is scrolled*/
+    top: 616px;
+    height: 80px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(212,175,55,0.8);
+    color: white;
+    text-align: center;
+}
+
+/* for styling the paragraph of the footer*/
+.footer-terms p {
+    padding-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+/*FORM SECTION*/
+
+/*Registration form styling, also given the flex display so it can be positioned just beside the image*/
+
+.register {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+/*Registration Section*/
+.this-reg { /*used to create a div so the contents of the registration form wouldnt fall out of place*/
+    border: 0px solid #000000;
+    width: 450px;
+    margin-left: 100px;
+}
+
+.signin input[type=text], input[type=password] { /*styling and adjusting the input boxes for the registration form*/
+    width: 90%;
+    height: 60px;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+.signin label { /*styling the label that is username and password*/
+    margin-left: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.signin h2 { 
+    margin-left: 20px;
+}
+
+.signin p {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.submitbtn { /*Styling the login and register button*/
+    background-color: #db0707;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-left: 20px;
+    font-family: 'Roboto Slab', serif;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    height: 60px;
+}
+
+.submitbtn1 {
+    background-color: #db0707;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-left: 340px;
+    font-family: 'Roboto Slab', serif;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.message { /*styling the message on the registration form*/
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+  
+.image-wine { /*positioning the image*/
+    float: right;
+    margin-left: 200px;
+}
+
+
+
+/**Footer: same styling as we have in ABweb.css**/
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 30px 20px 30px;
+    background-color: #D4AF37;
+    width: auto;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer p {
+    font-family: 'Roboto Slab', serif;
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 22px;
+}
+
+#ft-r {
+    font-size: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+  
+.footer li {
+    line-height: 2em;
+}
+  
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer p {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.navfooter {
+    margin-top: 37px;
+    margin-left: 100px;
+}
+
+.link-items {
+    padding-top: 0px;
+    margin-left: 80px;
+}
+
+.navlist p {
+    text-align: left;
+}
+
+.footer-addy {
+    margin-top: 32px;
+    margin-right: 1.25em;
+}
+
+#purpose {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.nav-title {
+    margin-top: 1.3em;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.payment {
+    float: right;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.btn1 {
+    border: 1px solid #ffffff;
+    padding: 8px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 0px;
+    margin-top: 35px;
+    font-size: 12px;
+}
+
+.btn-one1 {
+    background-color: #d91e18;
+    font-family: 'Roboto Slab', serif;
+}
+
+.fab {
+    padding-left: 20px;
+    transition: all 0.25s;
+}
+
+.fab a:hover {
+    text-shadow: #000000;
+    transform: scale(1.025);
+    -webkit-transform: scale(1.1);
+}
+
+.extra-footer {
+    border: 1px solid #ffffff;
+    background-color: #D4AF37;
+    text-align: center;
+    width: auto;
+}
+
+.extra-footer p {
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 2px;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+}
+
+.extra-footer a {
+    color: #ffffff;
+}
