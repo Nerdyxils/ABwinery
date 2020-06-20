@@ -30,9 +30,9 @@ only difference is the inclusion of border and background color for the navigati
 }
 
 header {
-    border: 1px solid #001999; /* the border included*/
+    border: 1px solid #D4AF37; /* the border included*/
     height: 70px;
-    background-color: #001999; /*the styling of the background of the navigation bar color*/
+    background-color: #D4AF37; /*the styling of the background of the navigation bar color*/
 }
 
 .main-nav {
@@ -104,8 +104,8 @@ header {
     width: 1349px;
     height: 40px;
     padding-top: 7px;
-    border: 2px solid #001999;
-    background-color: #001999
+    border: 2px solid #D4AF37;
+    background-color: #D4AF37;
 }
 
 .categories a {
@@ -334,7 +334,7 @@ button { /*styling the "add to cart" button*/
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    background-color: #001999;
+    background-color: #D4AF37;
     position: fixed; /*it is set to fixed so it doesn't move as the page is being scrolled */
     bottom: 130px;
     right: 40px;
@@ -551,8 +551,8 @@ label {
     display: flex;
     flex-wrap: wrap;
     padding: 30px 30px 20px 30px;
-    background-color: #000340;
-    width: 1349px;
+    background-color: #D4AF37;
+    width: auto;
     border-top: 1px solid #e5e5e5;
 }
 
@@ -669,10 +669,10 @@ label {
 
 /*creating extra footer where we have the drink responsibly texts and also giving a different but similar background to the main footer*/
 .extra-footer {
-    border: 1px solid #000000;
-    background-color: #001999;
+    border: 1px solid #ffffff;
+    background-color: #D4AF37;
     text-align: center;
-    width: 1349px;
+    width: auto;
 }
 
 .extra-footer p {

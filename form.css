@@ -26,9 +26,9 @@ html {
 }
 
 header {
-    border: 1px solid #001999;
+    border: 1px solid #D4AF37;
     height: 70px;
-    background-color: #001999;
+    background-color: #D4AF37;
 }
 
 .main-nav {
@@ -153,7 +153,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     padding: 30px 30px 20px 30px;
-    background-color: #000340;
+    background-color: #D4AF37;
     width: 1349px;
     border-top: 1px solid #e5e5e5;
 }
@@ -270,8 +270,8 @@ button:hover {
 }
 
 .extra-footer {
-    border: 1px solid #000000;
-    background-color: #001999;
+    border: 1px solid #ffffff;
+    background-color: #D4AF37;
     text-align: center;
     width: 1349px;
 }
